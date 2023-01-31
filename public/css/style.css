@@ -1,0 +1,87 @@
+/*리셋*/
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: 'Noto Sans KR', sans-serif;}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+
+/*전체 레이아웃*/
+#wrap {width: 100%; background: #fff;}
+#header {width: 100%; height: 140px;}
+#contents {width: 100%; height: 800px; background-image: no-repeat center; background-image: url('../img/background-main.jpg'); background-size: cover;}
+#footer {width: 100%; height: 100px; background-color: #212121;}
+
+/*레이아웃*/
+#header-top {width: 100%; height: 60px; border-bottom: 1px solid #eeeeee;}
+#header-nav {width: 100%; height: 80px; border-bottom: 1px solid #eeeeee;}
+#contents-01 {width: 100%; height: 600px;}
+#contents-02 {width: 100%; height: 50px;}
+#contents-03 {width: 100%; height: 150px;}
+#footer-nav {width: 100%; height: 60px;}
+#footer-info {width: 100%; height: 40px;}
+
+/*컨테이너*/
+.container {width: 1100px; margin: 0 auto; height: inherit;}
+
+/*컨텐츠*/
+#contents .container {width: 1100px; position: relative; margin: 0 auto;}
+
+/* header */
+.s-plus-logo {float: left; padding: 12px 10px;}
+.headeritem {float: left; font-size: 14px; font-weight: 600; letter-spacing: -0.9px; padding-top: 20px; padding-left: 50px;}
+.headeritem span {padding-left: 50px;}
+.headeritem span a {text-decoration: none; color: #111;}
+.headeritem > span a {position: relative;}
+.headeritem > span a:after {content: ''; display: inline-block; width: 0%; height: 1px; background: #000; trasition: all .5s ease-out; position: absolute; bottom: 0; left: 0px;}
+.headeritem > span:hover a:after {width: 100%;}
+.searchbox {position: absolute; margin-left: 550px; padding-top: 20px;}
+.searchbox i {position: relative; top: 1px; left: -36px;}
+.search input[type=text] {width: 530px; height: 40px; padding: 10px; background-color: #fff; opacity: 0.5; border-radius: 2px; font-size: 16px; 
+    font-weight: 400; display: table-cell; text-align: left; border: 1px solid darkgray;}
+.hogun-logo {float: left; margin-left: 130px; margin-top: 14px;}
+
+/*contents*/
+#contents-01 .section {width: 100%; height: 600px; display: flex; justify-content: space-between; padding: 35px;}
+#contents-01 .section > div {width: 300px; height: 530px; padding-top: 5px; cursor: pointer; border-radius: 14px; border: 1px solid #e0e0e0; background-color: #fff; box-shadow: 0 3px 3px 0 rgb(0 0 0 / 5%), 0 5px 15px 0 rgb(0 0 0 / 5%);}
+#contents-01 .section > div:hover {transform: translateY(-3%); transition-duration: 0.3s;}
+#contents-01 .section > div h3 {padding: 10px 20px; position: relative; color: #1176BC; border-bottom: 1px solid #eeeeee;}
+#contents-01 .section > div h3 i {position: absolute; top: 0; right: 0; padding: 16px;}
+#contents-01 .section > div p {margin-top: 12px; line-height: 24px; font-weight: 400; text-indent: 26px;}
+#contents-01 .section > div a {text-decoration: none; color: inherit;}
+#contents-01 .section .image-01 {width: 300px; height: 250px; border-bottom: 1px solid #eeeeee; background: url('../img/manual.png'); background-size: 250px 250px; background-repeat: no-repeat; background-position: 20px -10px;}
+#contents-01 .section .image-02 {width: 300px; height: 250px; border-bottom: 1px solid #eeeeee; background: url('../img/tutorial.png'); background-size: 200px 200px; background-repeat: no-repeat; background-position: 46px 20px;}
+#contents-01 .section .image-03 {width: 300px; height: 250px; border-bottom: 1px solid #eeeeee; background: url('../img/support.png'); background-size: 220px 220px; background-repeat: no-repeat; background-position: 46px 10px;}
+#contents-01 .section .text {width: 300px; height: 150px; border-bottom: 1px solid #eeeeee;}
+#contents-01 .section .button {position: absolute; width: 300px; height: 50px; font-size: 14px; color: #00bcd4; font-weight: 400; text-align: center; line-height: 60px;}
+#contents-01 .section .arrow {position: relative; top: 15px; left: 250px; font-size: 20px; color: #00bcd4; font-weight: 400;}
+#contents-02 {width: 100%; height: 50px;}
+#contents-02 > h2 {color: #fff; font-weight: 500; text-align: center; line-height: 55px;}
+#contents-02 .title {width: 100%; height: 50px; border-bottom: 2px solid #ef6c00;}
+#contents-02 .title-01 {width: 180px; height: 50px; font: 16px; font-weight: 500; color: #fff; padding-left: 28px; line-height: 50px; border-radius: 3px; background-color: #ef6c00;}
+#contents-03 .section {width: 100%; height: 150px; display: flex; justify-content: space-between; padding: 35px;}
+#contents-03 .section > div {width: 300px; height: 80px; line-height: 80px; text-align: center; cursor: pointer; border-radius: 14px; border: 1px solid #fafafa; background-color: #fff; box-shadow: 0 3px 3px 0 rgb(0 0 0 / 5%), 0 5px 15px 0 rgb(0 0 0 / 5%);}
+#contents-03 .section p {color: #ef6c00; font-size: 20px; font-weight: 500;}
+#contents-03 .section i {position: relative; top: 0px; left: 40px;}
+#contents-03 .section .site p:hover {transform: translateY(-8%); transition-duration: 0.3s;}
+
+/*footer*/
+#footer #footer-nav .terms {height: 60px; display: flex; justify-content: flex-end; padding: 20px;}
+#footer h5 {color: #fff; font-weight: 300;}
+#footer #footer-nav .terms a {text-decoration: none; color: #fff;}
+#footer #footer-nav .terms-01 {width: 800px;}
+#footer #footer-nav .terms-02 {width: 110px; text-align: right;}
+#footer #footer-nav .terms-03 {width: 150px; text-align: center;}
+#footer #footer-nav .terms-04 {width: 150px; text-align: left;}
+#footer #footer-info h5 {padding-left: 20px; line-height: 30px;}
+
+/*Layer Popup*/
+.modal-02  {background-color: rgba(0, 0, 0, 0.7); position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: none; overflow: auto;}
+.modal-02 .modal-inner-02 {background-color: #fff; width: 760px; font-weight: 300; padding: 15px; position: absolute; top: 50%; left: 50%; border-radius: 10px; transform: translate(-50%, -7.4%);}
+.modal-02 .modal-inner-02 h3 {padding-left: 10px; border-bottom: 1px solid #e0e0e0; line-height: 50px;}
+.modal-02 .modal-inner-02 .modal-close-02 {position: absolute; top: 22px; left: 700px; font-size: 24px; cursor: pointer;}   
+.modal-03  {background-color: rgba(0, 0, 0, 0.7); position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: none; overflow: auto;}
+.modal-03 .modal-inner-03 {background-color: #fff; width: 760px; font-weight: 300; padding: 15px; position: absolute; top: 50%; left: 50%; border-radius: 10px; transform: translate(-50%, -11.1%);}
+.modal-03 .modal-inner-03 h3 {padding-left: 10px; border-bottom: 1px solid #e0e0e0; line-height: 50px;}
+.modal-03 .modal-inner-03 .modal-close-03 {position: absolute; top: 22px; left: 700px; font-size: 24px; cursor: pointer;}
+.modal-04  {background-color: rgba(0, 0, 0, 0.7); position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: none; overflow: auto;}
+.modal-04 .modal-inner-04 {background-color: #fff; width: 760px; font-weight: 300; padding: 15px; position: absolute; top: 50%; left: 50%; border-radius: 10px; transform: translate(-50%, -124%);}
+.modal-04 .modal-inner-04 h3 {padding-left: 10px; border-bottom: 1px solid #e0e0e0; line-height: 50px;}
+.modal-04 .modal-inner-04 .modal-close-04 {position: absolute; top: 22px; left: 700px; font-size: 24px; cursor: pointer;}      

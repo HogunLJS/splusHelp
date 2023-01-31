@@ -1,0 +1,51 @@
+/*리셋*/
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: 'Noto Sans KR', sans-serif;}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+
+/*전체 레이아웃*/
+#wrap {width: 100%;}
+#header {width: 100%; height: 120px;}
+#contents {width: 100%; height: 2000px;}
+#footer {clear: both; width: 100%; height: 60px; background-color: #444;}
+
+/*레이아웃*/
+#header-top {width: 100%; height: 60px; background: #fafafa; border-bottom: 1px solid #eeeeee;}
+#header-bottom {width: 100%; height: 60px; border-bottom: 1px solid #eeeeee;}
+
+/*컨테이너*/
+.container {width: 1100px; margin: 0 auto; height: inherit;}
+
+/*컨텐츠*/
+.container-sidebar {width: 25%; height: 2000px; border-left: 1px solid #eeeeee; border-right: 1px solid #eeeeee;}
+.container-contents {float: left; width: 75%; height: 2000px;}
+
+/* header */
+.s-plus-logo {float: left; padding: 10px 60px;}
+.headeritem {float: left; font-size: 14px; font-weight: 600; letter-spacing: -0.9px; padding-top: 20px;}
+.headeritem span {padding-left: 40px;}
+.headeritem span a {text-decoration: none; color: #111;}
+.headeritem > span a {position: relative;}
+.headeritem > span a:after {content: ''; display: inline-block; width: 0%; height: 1px; background: #000; trasition: all .5s ease-out; position: absolute; bottom: 0; left: 0px;}
+.headeritem > span:hover a:after {width: 100%;}
+.searchbox {margin-left: 525px; padding-top: 14px;}
+.search input[type=text] {width: 500px; height: 30px; padding: 10px; background-color: #fff; opacity: 0.5; border-radius: 2px; font-size: 16px; 
+    font-weight: 400; display: table-cell; text-align: left; vertical-align: middle; border: 1px solid darkgray;}
+.search input[type=submit] {width: 60px; height: 30px; background-color: #424242; line-height: 10px; margin-left: -3px; padding: 10px; border-radius: 2px;
+    font-size: 12px; font-weight: 300; color: #fff; border: 1px #111; display: table-cell; text-align: center; vertical-align: middle;}
+.search input[type=text]::placeholder {color: #000;}
+.hogun-logo {float: left; margin-left: 130px; margin-top: 12px;}
+
+/*side-bar*/
+.container-sidebar {box-shadow: 0 8px 10px 0 rgb(36 50 66 / 5%)}
+.container-sidebar .menu {padding-top: 10px;}
+.container-sidebar .menu .item {position: relative; cursor: pointer;}
+.container-sidebar .menu .item a {color: #000; font-size: 14px; font-weight: 500; text-decoration: none; display: block; padding: 5px 60px; line-height: 40px;}
+.container-sidebar .menu .item a:hover {background: #1176BC; color: #fff; transition: 0.1s ease;}
+.container-sidebar .menu .item a .toolbar {position: absolute; left: 0px; margin: 5px 10px;}
+.container-sidebar .menu .item a .dropdown {position: absolute; right: 0px; margin: 9px 20px; transition: 0.1s ease;}
+.container-sidebar .menu .item .sub-menu {background: #fff; display: none;}
+.container-sidebar .menu .item .sub-menu a {color: #000; font-size: 12px; font-weight: 400; line-height: 30px; padding-left: 70px;}
+.container-sidebar .menu .item .sub-menu a:hover {background: #1176BC; color: #fff; transition: 0.1s ease;}
+.rotate {transform: rotate(90deg);}
+

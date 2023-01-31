@@ -1,0 +1,26 @@
+{
+  "name": "web2-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "compression": "^1.7.4",
+    "express": "^4.18.2",
+    "gh-pages": "^5.0.0",
+    "mysql": "^2.18.1",
+    "public": "^0.1.5",
+    "sanitize-html": "^2.8.1"
+  },
+  "homepage" : "https://themonty12.github.io/splusHelp/"
+}
